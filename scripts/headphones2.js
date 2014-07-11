@@ -1,4 +1,4 @@
-function b_headphones (sSelector) 
+function b_headphones(sSelector) 
 {
 var h = this;
 h.selector 		= sSelector;
@@ -6,40 +6,19 @@ h.gallery 		= $(h.selector);
 h.pictures 		= h.headphones.find(".b-picture");
 //h.current 		= 0;
 
-m.showPicture = function(){
+h.showPicture = function(){
 	
-	$(this).children(".b-headphones")
-		.css({
-			'display':'block'
-			})
-		.stop()
-		.animate({
-			'opacity': '1'
-			}, 300);
 			
 	};
 	
 
-m.hidePicture = function(){
-	
-	$(this).children('.b-headphones')
-		.stop()
-		.animate({
-			'opacity':'0'
-			}
-		, 300
-		, function(){				//функция, которая выполняется по окончанию анимации
-				$(this)
-				.css({
-						'display':'none'
-					})
-				}
-			)
+h.hidePicture = function(){
+
 	}
 
 
 
-m.menu.find(".b-picture__image")
-	.mouseover(m.showPicture)   // при наведении мыши - показать подменю этого меню
-	.mouseout(m.hidePicture); 
+h.menu.find(".b-picture__image")
+	.mouseover(h.showPicture)   // при наведении мыши - показать подменю этого меню
+	.mouseout(h.hidePicture); 
 	}
