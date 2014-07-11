@@ -1,0 +1,36 @@
+body{
+	/*background-image:url(../images/gray-one1.jpg);*/
+}
+/*.b-catalog{
+
+}
+.b-good{
+
+}
+*/
+.b-good__img{
+	height:300px;
+	width:300px;
+	display: inline-block;
+    padding: 3px 5px;
+	
+}
+.b-good__img:hover{
+	background:#afafaf;
+}
+
+/*
+.b-good__description{
+	padding:5%;
+	font-size:1em;
+}
+.b-good__order{
+
+}*/
+
+
+/*.st2 {width:150px;height:150px;}
+.st2  img{width:150px;height:150px;position:absolute;z-index:150;}
+.st2:hover {width:150px;height:150px;overflow:visible;}
+.st2:hover img{visibility:visible;position:absolute;z-index:150;}*/
+
